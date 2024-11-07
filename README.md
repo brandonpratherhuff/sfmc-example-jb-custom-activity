@@ -14,25 +14,6 @@ Learn more about [Journey Builder](https://www.salesforce.com/products/marketing
 
 ## Getting Started
 
-The quickest way to get started is to install [Node.js](https://nodejs.org/) then run the app locally:
-```
-# Install package dependencies
-npm install
-
-# Run the Express app in development mode
-npm run dev
-```
-
-A webapp will be available at http://localhost:8080/
-
-You will be greeted with a landing page with links to the various examples we've created.
-
-## Deployment
-You can deploy this example to Heroku and start working with Journey Builder Custom Activities Today!
-
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy) 
-
-
 ## Examples
 
 ### /modules/discount-code
