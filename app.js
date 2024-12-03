@@ -1,3 +1,4 @@
+const serverless = require('serverless-http');//added for serverless
 const express = require('express');
 const path = require('path');
 const bodyParser = require('body-parser')
@@ -8,6 +9,7 @@ const submodules = [
 ];
 
 const app = express();
+
 
 // parse application/json
 app.use(bodyParser.json())
@@ -23,3 +25,5 @@ submodules.forEach((sm) => sm(app, {
 app.listen(app.get('port'), function() {
     console.log(`Express is running at localhost: ${app.get('port')}`);
 });
+
+module.exports.handler = serverless(app); //added for serverless
